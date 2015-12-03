@@ -13,7 +13,11 @@
     <div class="wraper-header">
       <div class="logo"> <img src="z41.png" width="140" height="130" /></div>
       <div class="slogan">Giá trị sản phẩm là niềm tự hào của chúng tôi</div>
-      
+      <ul class="store-menu">
+        <li class="store"><a href="#"> <i class="icon-store-menu"></i> Giỏ hàng: <span class="item">(0)</span> <span class="price">0 ₫</span> </a></li>
+        <li class="login"><a href="#">ĐĂNG NHẬP</a></li>
+        <li><a href="#">ĐĂNG KÝ</a></li>
+      </ul>
     </div>
   </div>
   <!--end of wraper-header-->
@@ -21,7 +25,7 @@
     <div class="bg-menu">
       <div class="wraper-content">
         <ul class="main-menu">
-          <li clas="menu"><a>Trang chủ</a></li>
+          <li clas="menu"><a href="index.php">Trang chủ</a></li>
           <li clas="menu"><a>Giới thiệu</a></li>
           <li clas="menu"><a>Sản phẩm</a>
             <ul>
@@ -59,38 +63,10 @@
               </div>
             </section>
           </div>
-       <div class= ads-small> <img class ="img-right" src="h19.jpg" width="560" height="218" /> <img src="h20.jpg" width="560" height="218" /> </div>
+       <div class= ads-small> <img class ="img-right" src="h19.jpg" width="560" height="218" /> <img src="h20.jpg" width="560" height="218" /></div>
           <div class="content-2">
-            <div class ="hot-sale">
-              <h2 class="title-sale">Sản Phẩm Cao Cấp</h2>
-              <ul class="list-product">
-                <li class="product-item">
-                  <h2 class="item-name"><a href="sanpham.php?do=read&id={bc1.id}">{bc1.name}</a></h2>
-                  <a href="sanpham.php?do=read&id={bc1.id}"><img src="{bc1.img}" width="244" height="246" /></a>
-                  <div class="price-cart">
-                    <p class="item-price"><a href="sanpham.php?do=read&id={bc1.id}">{bc1.gia}</a></p>
-                    <p class="add-cart"><a href="sanpham.php?do=read&id={bc1.id}">Thêm vào giỏ</a></p>
-                  </div>
-                </li>
-                <li class="product-item">
-                  <h2 class="item-name"><a href="sanpham.php?do=read&id={bc2.id}">{bc2.name}</a></h2>
-                  <a href="sanpham.php?do=read&id={bc2.id}"><img src="{bc2.img}" width="244" height="246" /></a>
-                  <div class="price-cart">
-                    <p class="item-price"><a href="sanpham.php?do=read&id={bc2.id}">{bc2.gia}</a></p>
-                    <p class="add-cart"><a href="sanpham.php?do=read&id={bc2.id}">Thêm vào giỏ</a></p>
-                  </div>
-                </li>
-                <li class="product-item">
-                  <h2 class="item-name"><a href="sanpham.php?do=read&id={bc3.id}">{bc3.name}</a></h2>
-                  <a href="sanpham.php?do=read&id={bc3.id}"><img src="{bc3.img}" width="244" height="246" /></a>
-                  <div class="price-cart">
-                    <p class="item-price"><a href="sanpham.php?do=read&id={bc3.id}">{bc3.gia}</a></p>
-                    <p class="add-cart"><a href="sanpham.php?do=read&id={bc3.id}">Thêm vào giỏ</a></p>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="contact">
+            {content}
+            <div class="contact"><!-- 
               <div class="skype-block"> <a href="skype:brodev?call"> <img class="imageStatusSkype" src="skype.png" alt="Skype Me™!"> </a>
                 <p>Nguyễn Ngọc Thủy (sale) </p>
                 <p><span class="phone">0987332497</span></p>
@@ -99,45 +75,8 @@
                 <div class="fb-like-box" data-href="https://www.facebook.com/pages/BeCo-Shop/121440401216060?fref=ts" data-width="300" data-height="295" data-colorscheme="light" data-show-faces="true" data-stream="false" data-header="true">
                   <iframe scrolling="no" style="width: 288px; height:295px;" src="http://www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Fpages%2FBeCo-Shop%2F121440401216060%3Ffref%3Dts&amp;height=295&amp;width=300&amp;header=true&amp;show_faces=true&amp;stream=false&amp;colorscheme=light&amp;show_border=true" frameborder="0"></iframe>
                 </div>
-              </div>
+              </div>-->
             </div>
-          </div>
-          <div class="content-3"> 
-          	<h2 class="title-sale">Mặt hàng mới</h2>
-            <ul class="typical-products">
-            	<li><a href="sanpham.php?do=read&id={cn1.id}">
-               		<img src="{cn1.img}" width="266" height="266" />
-                    <h2 class="product-title">{cn1.name}</h2>
-                    <p class="decription">
-                    {cn1.ghichu}
-                    </p>
-                    </a>
-                </li>
-                <li><a href="sanpham.php?do=read&id={cn2.id}">
-               		<img src="{cn2.img}" width="266" height="266" />
-                    <h2 class="product-title">{cn2.name}</h2>
-                    <p class="decription">
-                    {cn1.ghichu}
-                    </p>
-                    </a>
-                </li>
-                <li><a href="sanpham.php?do=read&id={cn3.id}">
-               		<img src="{cn3.img}" width="266" height="266" />
-                    <h2 class="product-title">{cn3.name}</h2>
-                    <p class="decription">
-                     {cn3.ghichu}
-                    </p>
-                    </a>
-                </li>
-                <li><a href="#">
-               		<img src="{cn4.img}" width="266" height="266" />
-                    <h2 class="product-title">{cn4.name}</h2>
-                    <p class="decription">
-                    {cn4.ghichu}
-                    </p>
-                    </a>
-                </li>
-            </ul>
           </div>
           <!-- jQuery --> 
           <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script> 
@@ -152,7 +91,7 @@
     $(window).load(function(){
       $('.flexslider').flexslider({
         animation: "slide",
-		controlNav:false,
+    controlNav:false,
       });
     });
   </script> 
@@ -164,9 +103,9 @@
   <!--end of wraper-content-->
   <div class="bg-footer">
     <div class="wraper-footer"> 
-    	<a href="#">@BEDECK FASHION</a>
+      <a href="#">@BEDECK FASHION</a>
         <ul>
-        	<li><a href="#"><img src="facebook.png" width="32" height="32" /></a></li>
+          <li><a href="#"><img src="facebook.png" width="32" height="32" /></a></li>
             <li><a href="#"><img src="googleplus.png" width="31" height="32" /></a></li>
             <li><a href="#"><img src="twitter.png" width="31" height="31" /></a></li>
             <li><a href="#"><img src="zing.png" width="33" height="32" /></a></li>
